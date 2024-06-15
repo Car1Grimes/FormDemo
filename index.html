@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Demo form</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <div class="heading">
+        <h1>Contact Us</h1>
+        <p>Any question or remarks? Just write us a message!</p>
+      </div>
+
+      <div class="container">
+        <!-- Contact info -->
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <p class="desc">
+            Fill up the form and our Team will get back to you within 24 hours.
+          </p>
+
+          <div class="info-item">
+            <span class="icon">
+              <i class="fa-solid fa-phone"></i>
+            </span>
+            <span class="value">+84123456789</span>
+          </div>
+          <div class="info-item">
+            <span class="icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <span class="value">abc@gmail.com</span>
+          </div>
+          <div class="info-item">
+            <span class="icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </span>
+            <span class="value">123 Nguyen Chi Thanh</span>
+          </div>
+
+          <div class="socials">
+            <a href="#!" class="item">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#!" class="item">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+            <a href="#!" class="item">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#!" class="item">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+
+          <div class="circle"></div>
+          <div class="circle large"></div>
+        </section>
+
+        <!-- Contact form -->
+        <form class="form" autocomplete="off" action="" method="post">
+          <div class="form-row">
+            <div class="form-item">
+              <label class="form-label" for="first-name">First Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="first-name"
+                id="first-name"
+                placeholder="Enter first name..."
+              />
+              <p class="error-message">Do not leave this field blank</p>
+            </div>
+            <div class="form-item">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input
+                class="form-input"
+                type="text"
+                name="last-name"
+                id="last-name"
+                placeholder="Enter last name..."
+              />
+              <p class="error-message">Do not leave this field blank</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-item">
+              <label class="form-label" for="email">Mail</label>
+              <input
+                class="form-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email..."
+              />
+              <p class="error-message">Do not leave this field blank</p>
+            </div>
+            <div class="form-item">
+              <label class="form-label" for="phone">Phone</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Enter phone number..."
+              />
+              <p class="error-message">Do not leave this field blank</p>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-item">
+              <label for="" class="form-label large">
+                What part of the website do you need?
+              </label>
+              <div class="radio-group">
+                <div class="radio-btn">
+                  <input
+                    type="radio"
+                    name="web-design"
+                    id="web-design"
+                    checked
+                  />
+                  <label for="web-design">Web Design</label>
+                </div>
+                <div class="radio-btn">
+                  <input
+                    type="radio"
+                    name="web-development"
+                    id="web-development"
+                  />
+                  <label for="web-development">Web Development</label>
+                </div>
+                <div class="radio-btn">
+                  <input type="radio" name="logo-design" id="logo-design" />
+                  <label for="logo-design"> Logo Design </label>
+                </div>
+                <div class="radio-btn">
+                  <input type="radio" name="other" id="other" />
+                  <label for="other">Other</label>
+                </div>
+              </div>
+              <p class="error-message">Do not leave this field empty</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-item">
+              <label for="form-message" class="form-label">Message</label>
+              <textarea
+                class="form-message"
+                name="form-message"
+                id="form-message"
+                placeholder="Write your message..."
+              ></textarea>
+            </div>
+          </div>
+          <div class="submit-wrapper">
+            <button class="submit-btn" type="submit">Send Message</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
